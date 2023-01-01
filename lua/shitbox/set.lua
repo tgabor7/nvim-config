@@ -31,3 +31,5 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.rust_recommended_style = 0
+
+vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()]]
